@@ -36,7 +36,7 @@ To run the Jupyter Notebook with all the data in the GitHub repository, follow t
 ## Assignment explanation
 
 - **Data extraction**: First I needed to download the data from Azure blob storage. For that purpose, I used requests library. I stored dataframes and sas tokens in variables. For plan_data I used plan_df and for post_buy data I used postbuy_df.
-- **Data exploration**: Then I explored the data in postbuy_df, check the NaN values, unique values, and missing values.- **Data exploration**: Then I explored the data in postbuy_df, check the NaN values, unique values, and missing values.
+- **Data exploration**: Then I explored the data in postbuy_df, check the NaN values, unique values, and missing values.
 - **Data cleaning**: After data exploration, I started to drop the columns. First I needed to remove columns, that have either no use like TagCodes column, or contain too much missing data (Source). Also, I wanted to rid of the data, that have no additional filtering value as they all contained only a single value. I also wanted to remove rows with missing data if there was not much data missing.
 -  **Downloading cleaned data**: I stored cleaned data in csv format.
 -  **Budget calculation**: The first task was to calculate how much of the budget was spent. 
