@@ -7475,7 +7475,26 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=96bb2877-5b87-445b-958e-11a0ec5dba39">
+<main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aecb21dc-b1e1-4a64-9791-3c6b875003ef">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Assignment-explanation">Assignment explanation<a class="anchor-link" href="#Assignment-explanation">¶</a></h2><ul>
+<li><strong>Data extraction</strong>: First I needed to download the data from Azure blob storage. For that purpose, I used requests library. I stored dataframes and sas tokens in variables. For plan_data I used plan_df and for post_buy data I used postbuy_df.</li>
+<li><strong>Data exploration</strong>: Then I explored the data in postbuy_df, check the NaN values, unique values, and missing values.</li>
+<li><strong>Data cleaning</strong>: After data exploration, I started to drop the columns. First I needed to remove columns, that have either no use like TagCodes column, or contain too much missing data (Source). Also, I wanted to rid of the data, that have no additional filtering value as they all contained only a single value. I also wanted to remove rows with missing data if there was not much data missing.</li>
+<li><strong>Downloading cleaned data</strong>: I stored cleaned data in csv format.</li>
+<li><strong>Budget calculation</strong>: The first task was to calculate how much of the budget was spent.</li>
+<li><strong>Performing visualisations</strong>: Using my cleaned dataframe I started to visualise the dataframes. The first visualisation task was to represent the planned budget and realised investments by day. The second task was to represent these values cumulatively and the last task was to calculate ratio between the cumulative planned budget and cumulative realised investments to the last data from postbuy_df</li>
+<li><strong>Suggestion</strong>: In the last section I tried to suggest other metrics to calculate and visualise interesting data.</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=96bb2877-5b87-445b-958e-11a0ec5dba39">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
